@@ -13,75 +13,70 @@
           format("woff2");
 
       }
-      @font-face{
-        font-family: "bold";
-        src: url(./assets/font/Vazirmatn-Bold.woff2)
-          format("woff2");
-
-      }
-      @font-face{
-        font-family: "semi-bold";
-        src: url(./assets/font/Vazirmatn-SemiBold.woff2)
-          format("woff2");
-
-      }
-      .margin{
-        padding: 20px;
-        border-radius: 18px;
-      }
-      #root{
-        padding: 60px;
-        
-      }
-      .addtocardbtn{
-        background-color: #88BDA4;
-      }
-      .body{
-        font-family: "vazirmatn";
-      }
-      .navbar-brand{
-        font-family: "bold";
-        font-size: x-large;
-      }
-      .bold-nav{
-        font-family: "bold";
-      }
-      .semi-bold{
-        font-family: "semi-bold";
-        font-size: small;
-      }
-      .title-font{
-        font-family: "semi-bold";
-        font-size: small;
-
-      }
-      .title-price{
-        direction: ltr;
-        font-family: "bold";
-      }
-      .biog{
-        padding: 20px;
-        border-radius: 18px;
-        width: 80%;
-        margin: 5% 10% 5% 5%;
-        max-width: 100%;
-        background-color: #fff;
-        box-shadow: 2px solid black;
-
-      }
-      .biog-font{
-        font-family: "bold";
-        font-size: large;
-      }
-      .h1{
-        margin-top: 3%;
-        margin-right: 3%;
-      }
-
-
-    
-    
-      
+      @font-face {
+            font-family: "bold";
+            src: url(./assets/font/Vazirmatn-Bold.woff2) format("woff2");
+        }
+        @font-face {
+            font-family: "semi-bold";
+            src: url(./assets/font/Vazirmatn-SemiBold.woff2) format("woff2");
+        }
+        .margin {
+            padding: 20px;
+            border-radius: 18px;
+        }
+        #root {
+            padding: 60px;
+        }
+        .addtocardbtn {
+            background-color: #88BDA4;
+        }
+        .body {
+            font-family: "vazirmatn";
+        }
+        .navbar-brand {
+            font-family: "bold";
+            font-size: x-large;
+        }
+        .bold-nav {
+            font-family: "bold";
+        }
+        .semi-bold {
+            font-family: "semi-bold";
+            font-size: small;
+        }
+        .title-font {
+            font-family: "semi-bold";
+            font-size: small;
+        }
+        .title-price {
+            direction: ltr;
+            font-family: "bold";
+        }
+        .biog {
+            padding: 20px;
+            border-radius: 18px;
+            width: 80%;
+            margin: 5% 10% 5% 5%;
+            max-width: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .biog-font {
+            font-family: "bold";
+            font-size: medium;
+        }
+        .h1 {
+            margin-top: 3%;
+            margin-right: 3%;
+        }
+        .product-card {
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
     </style>
   </head>
   <body style="background-color: #E6F2DD;direction: rtl;" class="body">
@@ -92,9 +87,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav" id="navbarNav">
             <li class="nav-item bold-nav">
-              <a class="nav-link active" aria-current="page" href="#">خانه</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">خانه</a>
             </li>
             <li class="nav-item bold-nav">
               <a class="nav-link" href="#">سبد خرید</a>
@@ -104,7 +99,7 @@
                 دسته بندی
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./iphone-produts.html">محصولات اپل</a></li>
+                <li><a class="dropdown-item" href="./apple-products.html">محصولات اپل</a></li>
                 <li><a class="dropdown-item" href="./samsung-produts.html">محصولات سامسونگ</a></li>
                 <li><a class="dropdown-item" href="./shiaomi-products.html">محصولات شیائومی</a></li>
                 <li><a class="dropdown-item" href="./honor-products.html">محصولات آنر</a></li>
@@ -116,15 +111,14 @@
       </div>
     </nav>
     <h1 class="h1 bold-nav">محصولات سامسونگ</h1>
-    <div class="border border-2  biog">
-      <p class="biog-font">
-        سامسونگ؛ جایی که نوآوری، بی‌مرز است.
-صفحه‌نمایش خیره‌کننده‌ی Dynamic AMOLED با نرخ ۱۲۰ هرتز و دوربین قدرتمند ۲۰۰ مگاپیکسلی با زوم فضایی، جزئیات را واقع‌گرایانه به تصویر میکشند. پردازنده‌ی پرسرعت و باتری با شارژ فوق‌سریع ۴۵ وات، عملکردی روان و همیشه آماده را برایتان به ارمغان می‌آورند.
-قلم هوشمند S Pen و رابط کاربری وان‌یوآی با ابزارهای هوش مصنوعی، خلاقیت و بهره‌وری شما را دوچندان میکنند. بدنه‌ی آلومینیومی با شیشه‌ی مقاوم و استاندارد ضدآب نیز زیبایی را با دوام همراه ساخته است.
-
-سامسونگ فقط یک گوشی نیست؛ پنجره‌ای به دنیای بی‌نهایت امکانات است.
-همین حالا با بهترین قیمت و گارانتی معتبر از ما تهیه کنید.
-        </p>
+    <div class="border border-2 biog">
+      <p class="biog-font">سامسونگ؛ جایی که نوآوری، بی‌مرز است.
+        صفحه‌نمایش خیره‌کننده‌ی Dynamic AMOLED با نرخ ۱۲۰ هرتز و دوربین قدرتمند ۲۰۰ مگاپیکسلی با زوم فضایی، جزئیات را واقع‌گرایانه به تصویر میکشند. پردازنده‌ی پرسرعت و باتری با شارژ فوق‌سریع ۴۵ وات، عملکردی روان و همیشه آماده را برایتان به ارمغان می‌آورند.
+        قلم هوشمند S Pen و رابط کاربری وان‌یوآی با ابزارهای هوش مصنوعی، خلاقیت و بهره‌وری شما را دوچندان میکنند. بدنه‌ی آلومینیومی با شیشه‌ی مقاوم و استاندارد ضدآب نیز زیبایی را با دوام همراه ساخته است.
+        
+        سامسونگ فقط یک گوشی نیست؛ پنجره‌ای به دنیای بی‌نهایت امکانات است.
+        همین حالا با بهترین قیمت و گارانتی معتبر از ما تهیه کنید.
+                </p>
     </div>
     <div class="text-center mt-5">
       <img
@@ -132,128 +126,144 @@
           class="img-fluid"
           style="width: 70%; max-width:100%;border-radius: 18px;margin: 0% 15%;"
           alt="iphone-poster">
-  </div>
+    </div>
     <div id="root"></div>
   </body>
   <script>
     const products = [
-      {
-        id: 1,
-        title: "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم‌کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
-        price: 1000,
-        image: "01-sam.webp",
-      },
-      {
-        id: 2,
-        title: "گوشی موبایل سامسونگ مدل Galaxy A57 دو سیم‌کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
-        price: 2000,
-        image: "02-sam.webp",
-      },
-      {
-        id: 3,
-        title: "گوشی موبایل سامسونگ مدل Galaxy S25 FE دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
-        price: 3000,
-        image: "03-sam.webp",
-      },
+    {
+    id: 1,
+    title: "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم‌کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
+    price: 103000000,
+    image: "01-sam.webp",
+  },
+  {
+    id: 2,
+    title: "گوشی موبایل سامسونگ مدل Galaxy A57 دو سیم‌کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
+    price: 78300000,
+    image: "02-sam.webp",
+  },
+  {
+    id: 3,
+    title: "گوشی موبایل سامسونگ مدل Galaxy S25 FE دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
+    price: 86100000,
+    image: "03-sam.webp",
+  },
 
-      {
-        id: 4,
-        title: "گوشی موبایل سامسونگ مدل Galaxy A07 دو سیم کارت ظرفیت 64 گیگابایت و رم 4 گیگابایت",
-        price: 4000,
-        image: "04-sam.webp",
-      },
-      {
-        id: 5,
-        title: "گوشی موبایل سامسونگ مدل Galaxy A16 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - ویتنام",
-        price: 5000,
-        image: "05-sam.webp",
-      },
-      {
-        id: 6,
-        title: "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
-        price: 5000,
-        image: "06-sam.webp",
-      },
-      {
-        id: 7,
-        title: "گوشی موبایل سامسونگ مدل Galaxy A06 دو سیم کارت ظرفیت 64 گیگابایت و رم 4 گیگابایت",
-        price: 5000,
-        image: "07-sam.webp",
-      },
+  {
+    id: 4,
+    title: "گوشی موبایل سامسونگ مدل Galaxy A07 دو سیم کارت ظرفیت 64 گیگابایت و رم 4 گیگابایت",
+    price: 14200000,
+    image: "04-sam.webp",
+  },
+  {
+    id: 5,
+    title: "گوشی موبایل سامسونگ مدل Galaxy A16 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - ویتنام",
+    price: 21700000,
+    image: "05-sam.webp",
+  },
+  {
+    id: 6,
+    title: "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
+    price: 4300000,
+    image: "06-sam.webp",
+  },
+  {
+    id: 7,
+    title: "گوشی موبایل سامسونگ مدل Galaxy A06 دو سیم کارت ظرفیت 64 گیگابایت و رم 4 گیگابایت",
+    price: 12800000,
+    image: "07-sam.webp",
+  },
     ];
+
+    //card array
+
+    let cart = [];
+
+    //sbd function updating
+    function updateCartBadge() {
+        const cartBadge = document.querySelector('.cart-badge');
+        if (cartBadge) {
+            cartBadge.textContent = cart.length;
+        }
+    }
+
+    //sbd in navbar
+    document.addEventListener('DOMContentLoaded', function() {
+        const navBar = document.querySelector('.navbar-nav');
+        if (navBar) {
+            const cartLi = document.createElement('li');
+            cartLi.className = 'nav-item bold-nav position-relative';
+            cartLi.innerHTML = `
+                <a class="nav-link" href="#">
+                    🛒 سبد خرید
+                    <span class="badge bg-danger cart-badge" style="position: absolute; top: 0; right: 0;">
+                        0
+                    </span>
+                </a>
+            `;
+            navBar.appendChild(cartLi);
+        }
+    });
+
+    //root
     const root = document.getElementById("root");
     root.className = "container";
 
     const row = document.createElement("div");
     row.className = "row g-4";
-    //row.innerHTML = "ROW"
-
     root.appendChild(row);
 
     for (let i = 0; i < products.length; i++) {
       const col = document.createElement("div");
       col.className = "col-md-4";
-      //col.innerHTML = products[i].title;
       row.appendChild(col);
 
-      //card
-
+      //cart
       const card = document.createElement("div");
-      card.className = "card border h-100 margin";
+      card.className = "card border h-100 margin product-card";
       col.appendChild(card);
 
-      // card img
-
+      //cart img
       const img = document.createElement("img");
       img.src = `./assets/img/${products[i].image}`;
       img.className = "card-img-top";
       card.appendChild(img);
 
-      //card Body
-
+      //cart body
       const cardBody = document.createElement("div");
-      cardBody.className = "card-body";
+      cardBody.className = "card-body d-flex flex-column";
       card.appendChild(cardBody);
 
       //card title
-
       const h5 = document.createElement("h5");
       h5.className = "card-title title-font";
       h5.innerHTML = products[i].title;
       cardBody.appendChild(h5);
 
-      //card price
-
+      //cart price
       const h3 = document.createElement("h3");
       h3.className = "card-text title-price";
-      h3.innerHTML = products[i].price;
+      const priceWithComma = products[i].price.toLocaleString('fa-IR');
+      h3.innerHTML = `${priceWithComma} تومان`;
       cardBody.appendChild(h3);
 
-
-      //card btn
-
+      //add to card btn
       const addToCartBtn = document.createElement("button");
-      addToCartBtn.className = "btn addtocardbtn semi-bold";
-      addToCartBtn.innerHTML = "افزودن به  سبد خرید";
-      addToCartBtn.addEventListener("click", () => {
-        cart.push(products[i].id);
-        console.log(cart);
-
-        //card btn
-
-        cartBtn.innerHTML = `<button type="button" class="btn btn-danger position-relative">
-Inbox
-<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">
-  ${cart.length}
-  <span class="visually-hidden">unread messages</span>
-</span>
-</button>`;
+      addToCartBtn.className = "btn addtocardbtn semi-bold mt-auto";
+      addToCartBtn.innerHTML = "افزودن به سبد خرید";
+      
+      //addtocardbtn function
+      addToCartBtn.addEventListener("click", function() {
+          cart.push(products[i].id);
+          console.log('🛒 سبد خرید:', cart);
+          alert(`✅ ${products[i].title.substring(0, 30)}... به سبد خرید اضافه شد!`);
+          // 
+          updateCartBadge();
       });
-      cardBody.appendChild(addToCartBtn);
 
-      row.appendChild(col);
+      cardBody.appendChild(addToCartBtn);
     }
-    document.body.appendChild(cartBtn);
   </script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </html>

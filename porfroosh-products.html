@@ -29,7 +29,7 @@
             padding: 60px;
         }
         .addtocardbtn {
-            background-color: #88BDA4;
+            background-color: #C62828;
         }
         .body {
             font-family: "vazirmatn";
@@ -69,6 +69,7 @@
         .h1 {
             margin-top: 3%;
             margin-right: 3%;
+            text-align: center;
         }
         .product-card {
             transition: transform 0.3s;
@@ -77,9 +78,18 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
+        .icon-text {
+            display: inline-block;
+            padding-left: 35px;
+            background-image: url('./assets/svg/fire-svgrepo-com.svg');
+            background-size: 38px 38px;
+            background-repeat: no-repeat;
+             background-position: left;
+            text-align: center;
+        }
     </style>
   </head>
-  <body style="background-color: #E6F2DD;direction: rtl;" class="body">
+  <body style="background-color: #FBC02D;direction: rtl;" class="body">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">گلابی</a>
@@ -110,64 +120,49 @@
         </div>
       </div>
     </nav>
-    <h1 class="h1 bold-nav">محصولات شیائومی</h1>
-    <div class="border border-2 biog">
-      <p class="biog-font">شیائومی؛ قدرت بی‌پایان برای همه.
-        دوربین‌های پیشرو با سنسورهای بزرگ و فناوری‌های پیشرفته، عکس‌هایی با جزئیات خیره‌کننده و فیلم‌برداری ۸K را در دسترس شما قرار می‌دهند. صفحه‌نمایش با کیفیت بالا و نرخ بروزرسانی روان، تماشای فیلم و بازی را به تجربه‌ای لذت‌بخش تبدیل کرده است.
-        
-        پردازنده‌های قدرتمند و باتری‌های با ظرفیت بالا به همراه شارژ فوق‌سریع (تا ۱۲۰ وات)، یعنی نگرانی از بابت تمام شدن شارژ را فراموش کنید. رابط کاربری MIUI با امکانات هوشمند و شخصی‌سازی بی‌نظیر، همراه با طراحی مدرن و بدنه‌ی خوش‌دست، شیائومی را به انتخابی ایده‌آل برای کسانی که به دنبال ارزش خرید بالا هستند تبدیل کرده است.
-        
-        شیائومی فقط یک گوشی نیست؛ قدرت و کیفیت را به خانه‌ی شما می‌آورد.
-        همین حالا بهترین مدل‌های شیائومی را با قیمتی استثنایی و گارانتی معتبر از ما بخواهید.</p>
-    </div>
-    <div class="text-center mt-5">
-      <img
-          src="./assets/img/shiomi-poster.png"
-          class="img-fluid"
-          style="width: 70%; max-width:100%;border-radius: 18px;margin: 0% 15%;"
-          alt="iphone-poster">
+    <div>
+      <apam class="h1 bold-nav icon-text">محصولات پرفروش گلابی موبایل</spam>
     </div>
     <div id="root"></div>
   </body>
   <script>
     const products = [
     {
-    id: 1,
-    title: "گوشی موبایل شیائومی مدل Poco X4 Pro 5G 2201116PG دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    price: 15600000,
-    image: "01-shia.webp",
-  },
-  {
-    id: 2,
-    title: "گوشی موبایل شیائومی مدل Poco X7 Pro دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - گلوبال",
-    price: 24800000,
-    image: "02-shia.webp",
-  },
-  {
-    id: 3,
-    title: "گوشی موبایل شیائومی مدل Redmi Note 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    price: 43200000,
-    image: "03-shia.webp",
-  },
-
-  {
-    id: 4,
-    title: "گوشی موبایل شیائومی مدل Redmi Note 14 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    price: 36400000,
-    image: "04-shia.webp",
-  },
-  {
-    id: 5,
-    title: "گوشی موبایل شیائومی مدل Poco C71 دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت",
-    price: 23900000,
-    image: "05-shia.webp",
-  },
-  {
-    id: 6,
-    title: "گوشی موبایل شیائومی مدل Redmi A3 دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت",
-    price: 11400000,
-    image: "06-shia.webp",
-  },
+        id: 1,
+        title: "گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت ",
+        price: 5000,
+        image: "05.webp",
+      },
+      {
+        id: 2,
+        title: "گوشی موبایل سامسونگ مدل Galaxy A07 دو سیم کارت ظرفیت 64 گیگابایت و رم 4 گیگابایت",
+        price: 4000,
+        image: "04-sam.webp",
+      },
+      {
+        id: 3,
+        title: "گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA تک سیم کارت + eSim ظرفیت 256 گیگابایت و رم 12 گیگابایت - نات اکتیو",
+        price: 5000,
+        image: "06.webp",
+      },
+      {
+        id: 4,
+        title: "گوشی موبایل شیائومی مدل Redmi Note 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
+        price: 3000,
+        image: "03-shia.webp",
+      },
+      {
+        id: 5,
+       title: "گوشی موبایل سامسونگ مدل Galaxy A16 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - ویتنام",
+        price: 5000,
+        image: "05-sam.webp",
+      },
+      {
+        id: 6,
+        title: "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
+        price: 5000,
+        image: "06-sam.webp",
+      },
     ];
 
     //card array

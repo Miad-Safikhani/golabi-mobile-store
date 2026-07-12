@@ -9,32 +9,26 @@
     <style>
       @font-face{
         font-family: "vazirmatn";
-        src: url(./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2)
-          format("woff2");
-
+        src: url(./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2) format("woff2");
       }
       @font-face{
         font-family: "bold";
-        src: url(./assets/font/Vazirmatn-Bold.woff2)
-          format("woff2");
-
+        src: url(./assets/font/Vazirmatn-Bold.woff2) format("woff2");
       }
       @font-face{
         font-family: "semi-bold";
-        src: url(./assets/font/Vazirmatn-SemiBold.woff2)
-          format("woff2");
-
+        src: url(./assets/font/Vazirmatn-SemiBold.woff2) format("woff2");
       }
+
       .margin{
         padding: 20px;
         border-radius: 18px;
       }
       #root{
         padding: 60px;
-        
       }
       .addtocardbtn{
-        background-color: #88BDA4;
+        background-color: #FBC02D;
       }
       .body{
         font-family: "vazirmatn";
@@ -53,7 +47,6 @@
       .title-font{
         font-family: "semi-bold";
         font-size: small;
-
       }
       .title-price{
         direction: ltr;
@@ -67,7 +60,6 @@
         max-width: 100%;
         background-color: #fff;
         box-shadow: 2px solid black;
-
       }
       .biog-font{
         font-family: "bold";
@@ -77,13 +69,110 @@
         margin-top: 3%;
         margin-right: 3%;
       }
-
-    
-    
       
+      .daste-h4{
+        font-family: "bold";
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .daste-h4-products{
+        font-family: "bold";
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 20px;
+      }
+
+      .por-link-wrapper {
+        text-align: left;
+        margin-bottom: 10px;
+        margin-left: 13%;
+        margin-top: 0;
+      }
+      
+      .por-link{
+        font-family: bold;
+        font-size: small;
+        display: inline-block;
+        margin: 0;
+      }
+      
+      .a{
+        text-decoration: none;
+      }
+      
+      .por-card{
+        border: 10px #FBC02D;
+      }
+
+      
+      .icon-wrapper {
+        display: flex;          
+        justify-content: center;
+        align-items: center;
+        gap: 40px; 
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 800px;
+      }
+
+      .icon-box {
+        width: 120px; 
+        height: 120px;
+        background: white;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        border: 2px solid #e8f0e3;
+        cursor: pointer;
+      }
+
+      .icon-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        border-color: #88BDA4;
+      }
+
+      .icon-box img {
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+        display: block;
+      }
+
+      @media (max-width: 576px) {
+        .icon-box {
+          width: 60px;
+          height: 60px;
+        }
+        .icon-box img {
+          width: 25px;
+          height: 25px;
+        }
+        .icon-wrapper {
+          gap: 9px;
+          padding: 10px;
+        }
+        .daste-h4,
+        .daste-h4-products {
+          font-size: 1.5rem;
+        }
+      }
+
+      #root {
+        padding-top: 10px;
+        padding-bottom: 60px;
+      }
     </style>
   </head>
-  <body style="background-color: #E6F2DD;direction: rtl;" class="body">
+  
+  <body style="background-color: #E6F2DD; direction: rtl;" class="body">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">گلابی</a>
@@ -93,8 +182,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item bold-nav">
-              <a class="nav-link active" aria-current="page" href="#">خانه</a>
-            </li>
+              <a class="nav-link active" aria-current="page" href="./index.html">خانه</a>
             </li>
             <li class="nav-item bold-nav">
               <a class="nav-link" href="#">سبد خرید</a>
@@ -104,7 +192,7 @@
                 دسته بندی
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./iphone-produts.html">محصولات اپل</a></li>
+                <li><a class="dropdown-item" href="./apple-products.html">محصولات اپل</a></li>
                 <li><a class="dropdown-item" href="./samsung-produts.html">محصولات سامسونگ</a></li>
                 <li><a class="dropdown-item" href="./shiaomi-products.html">محصولات شیائومی</a></li>
                 <li><a class="dropdown-item" href="./honor-products.html">محصولات آنر</a></li>
@@ -115,135 +203,163 @@
         </div>
       </div>
     </nav>
-    <h1 class="h1 bold-nav">محصولات اپل</h1>
-    <div class="border border-2  biog">
-      <p class="biog-font">
-        آیفون؛ جایی که قدرت با زیبایی دست می‌دهد. از تراشه‌های بیرقیب A-series با معماری پیشرفته و هوش مصنوعی محور گرفته تا دوربین‌هایی که هر لحظه را به یک اثر هنری تبدیل می‌کنند؛ فیلم‌برداری سینمایی با قابلیت تغییر فوکوس پس از ثبت، پرتره‌هایی با عمق میدان واقعی و عکاسی در شب که تاریکی را به روشنایی تبدیل می‌کند. صفحه‌نمایش خیره‌کننده‌ی OLED با رنگ‌های زنده و نرخ بروزرسانی ۱۲۰ هرتز، تجربه‌ای روان و چشمنواز را برای بازی، تماشای فیلم و کار روزمره به ارمغان می‌آورد. در کنار آن، سیستمعامل امن و روان iOS با بهینه‌سازی بی‌نظیر، سال‌ها بدون افت کیفیت همراه شماست و باتری با دوام بالا، خیال شما را از شارژ مجدد در میانه‌ی روز راحت می‌کند. طراحی آلومینیومی و شیشه‌ای با مقاومت بالا در برابر آب و گردوغبار، در کنار اکوسیستم یکپارچه‌ی اپل که هماهنگی کامل با مک، اپل‌واچ و ایرپادز را ممکن می‌سازد، آیفون را به فراتر از یک ابزار تبدیل کرده است. آیفون فقط یک گوشی نیست؛ سبک زندگی شماست. کیفیت، امنیت و زیبایی را یکجا تجربه کنید. همین حالا نسل جدید را با بهترین قیمت و گارانتی معتبر از ما بخواهید.</p>
+
+    <img 
+      src="./assets/img/upmain-poster.png"
+      alt="بهترین محصولات در فروشگاه گلابی"
+      style="width: 90%; max-width:100%; border-radius: 18px; margin: 3% 5% 4% 5%;"
+      class="img-fluid"
+    />
+
+    <div>
+      <h3 class="daste-h4">دسته بندی محصولات</h3>
+      
+      <div class="icon-wrapper">
+        <a href="./apple-products.html">
+        <div class="icon-box">
+          <img src="./assets/svg/apple-logo-svgrepo-com.svg" alt="محصولات اپل"/>
+        </div>
+        </a>
+        
+        <a href="./samsung-produts.html">
+        <div class="icon-box">
+          <img src="./assets/svg/samsung-svgrepo-com.svg" alt="محصولات سامسونگ" />
+        </div>
+        </a>
+        
+        <a href="./shiaomi-products.html">
+        <div class="icon-box">
+          <img src="./assets/svg/xiaomi-svgrepo-com.svg" alt="محصولات شیائومی" />
+        </div>
+        </a>
+
+        <a href="./honor-products.html">
+        <div class="icon-box">
+          <img src="./assets/svg/Honor.svg.webp" alt="محصولات آنر" />
+        </div>
+        </a>
+        
+        <a href="./nothing-products.html">
+        <div class="icon-box">
+          <img src="./assets/svg/Nothing.svg.webp" alt="محصولات ناتینگ" />
+        </div>
+        </a>
+      </div>
     </div>
-    <div class="text-center mt-5"></div>
-      <img
-          src="./assets/img/poster-iphone.jpeg"
-          class="img-fluid"
-          style="width: 70%; max-width:100%;border-radius: 18px;margin: 0% 15%;"
-          alt="iphone-poster">
-  </div>
+    
+    <div>
+      <h2 class="daste-h4-products">محصولات پرفروش</h2>
+      <div class="por-link-wrapper">
+        <h6 class="por-link"><a class="a" href="./porfroosh-products.html">مشاهده ی همه</a></h6>
+      </div>
+    </div>
+    
     <div id="root"></div>
+    
   </body>
   <script>
     const products = [
-      {
+    {
         id: 1,
-        title: "گوشی موبایل اپل مدل iPhone 13 Pro تک سیم کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت - اروپا نات اکتیو",
-        price: 1000,
-        image: "01.webp",
-      },
-      {
-        id: 2,
-        title: "گوشی موبایل اپل مدل iPhone 14 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت ",
-        price: 2000,
-        image: "02.webp",
-      },
-      {
-        id: 3,
-        title: "گوشی موبایل اپل مدل iPhone 15 Ch دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت",
-        price: 3000,
-        image: "03.webp",
-      },
-
-      {
-        id: 4,
-        title: "گوشی موبایل اپل مدل iPhone 16 Pro Max ZAA دو سیم کارت ظرفیت 1 ترابایت و رم 8 گیگابایت",
-        price: 4000,
-        image: "04.webp",
-      },
-      {
-        id: 5,
         title: "گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت ",
         price: 5000,
         image: "05.webp",
       },
       {
-        id: 6,
+        id: 2,
+        title: "گوشی موبایل سامسونگ مدل Galaxy A07 دو سیم کارت ظرفیت 64 گیگابایت و رم 4 گیگابایت",
+        price: 4000,
+        image: "04-sam.webp",
+      },
+      {
+        id: 3,
         title: "گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA تک سیم کارت + eSim ظرفیت 256 گیگابایت و رم 12 گیگابایت - نات اکتیو",
         price: 5000,
         image: "06.webp",
       },
+      {
+        id: 4,
+        title: "گوشی موبایل شیائومی مدل Redmi Note 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
+        price: 3000,
+        image: "03-shia.webp",
+      },
     ];
 
-    
+    let cart = [];
+
+    function updateCartBadge() {
+        const cartBadge = document.querySelector('.cart-badge');
+        if (cartBadge) {
+            cartBadge.textContent = cart.length;
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const navBar = document.querySelector('.navbar-nav');
+        if (navBar) {
+            const cartLi = document.createElement('li');
+            cartLi.className = 'nav-item bold-nav position-relative';
+            cartLi.innerHTML = `
+                <a class="nav-link" href="#">
+                    🛒 سبد خرید
+                    <span class="badge bg-danger cart-badge" style="position: absolute; top: 0; right: 0;">
+                        0
+                    </span>
+                </a>
+            `;
+            navBar.appendChild(cartLi);
+        }
+    });
+
     const root = document.getElementById("root");
     root.className = "container";
 
     const row = document.createElement("div");
     row.className = "row g-4";
-    //row.innerHTML = "ROW"
-
     root.appendChild(row);
 
     for (let i = 0; i < products.length; i++) {
       const col = document.createElement("div");
-      col.className = "col-md-4";
-      //col.innerHTML = products[i].title;
+      col.className = "col-md-3";
       row.appendChild(col);
 
-      //card
-
       const card = document.createElement("div");
-      card.className = "card border h-100 margin";
+      card.className = "card border h-100 margin product-card";
       col.appendChild(card);
-
-      // card img
 
       const img = document.createElement("img");
       img.src = `./assets/img/${products[i].image}`;
       img.className = "card-img-top";
       card.appendChild(img);
 
-      //card Body
-
       const cardBody = document.createElement("div");
-      cardBody.className = "card-body";
+      cardBody.className = "card-body d-flex flex-column";
       card.appendChild(cardBody);
-
-      //card title
 
       const h5 = document.createElement("h5");
       h5.className = "card-title title-font";
       h5.innerHTML = products[i].title;
       cardBody.appendChild(h5);
 
-      //card price
-
       const h3 = document.createElement("h3");
       h3.className = "card-text title-price";
-      h3.innerHTML = products[i].price;
+      const priceWithComma = products[i].price.toLocaleString('fa-IR');
+      h3.innerHTML = `${priceWithComma} تومان`;
       cardBody.appendChild(h3);
 
-
-      //card btn
-
       const addToCartBtn = document.createElement("button");
-      addToCartBtn.className = "btn addtocardbtn semi-bold";
-      addToCartBtn.innerHTML = "افزودن به  سبد خرید";
-      addToCartBtn.addEventListener("click", () => {
-        cart.push(products[i].id);
-        console.log(cart);
-
-        //card btn
-
-        cartBtn.innerHTML = `<button type="button" class="btn btn-danger position-relative">
-Inbox
-<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">
-  ${cart.length}
-  <span class="visually-hidden">unread messages</span>
-</span>
-</button>`;
+      addToCartBtn.className = "btn addtocardbtn semi-bold mt-auto";
+      addToCartBtn.innerHTML = "افزودن به سبد خرید";
+      
+      addToCartBtn.addEventListener("click", function() {
+          cart.push(products[i].id);
+          console.log('🛒 سبد خرید:', cart);
+          alert(`✅ ${products[i].title.substring(0, 30)}... به سبد خرید اضافه شد!`);
+          updateCartBadge();
       });
-      cardBody.appendChild(addToCartBtn);
 
-      row.appendChild(col);
+      cardBody.appendChild(addToCartBtn);
     }
-    document.body.appendChild(cartBtn);
   </script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </html>
